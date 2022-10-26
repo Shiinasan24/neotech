@@ -1,0 +1,33 @@
+// HEADER
+
+.navbar {
+    background-color: rgba(3, 44, 76, 1);
+}
+
+.navbar-container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+
+    nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+    }
+
+}
+
+#nav-socials {
+    a {
+        align-items: center;
+    }
+}
+

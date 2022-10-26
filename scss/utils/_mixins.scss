@@ -1,0 +1,18 @@
+@mixin flex-start($jc, $al) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $al;
+}
+
+@mixin flex-center($jc:center, $al:center) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $al;
+}
+
+@mixin flex-end($jc:end, $al:end) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $al;
+}
+

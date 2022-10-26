@@ -1,0 +1,134 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/container";
+@import "./layout/form";
+
+
+@import "./pages/work";
+@import "./pages/about";
+@import "./pages/project";
+
+
+// ---------------- HEADER ----------------
+main {
+    padding: 0 4rem;
+}
+
+.main-header {
+    @include flex-center;
+    padding: 3rem 0;
+}
+
+// ---------------- MAIN ----------------
+.container-posts {
+    display: flex;
+}
+
+
+
+// SECT MAIN HEADER //
+
+
+
+// SECT LATEST POSTS //
+.latest-posts {
+    width: 1000px;
+}
+
+.latest-posts h2 {
+    color: red;
+    padding: 2rem 0;
+}
+
+.latest-posts h3 {
+    color: red;
+}
+
+.latest-posts h3:nth-child(1) {
+    font-size: 14px;
+}
+
+.latest-posts h3:nth-child(2) {
+    color: black;
+}
+
+.latest-posts article div:nth-child(2) p:first-of-type {
+    font-size: 14px;
+    color: rgba(178, 184, 190, 1);
+}
+
+.latest-posts article {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.latest-posts article div:nth-child(2) {
+    @include flex-center($al:flex-start);
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 5rem;   
+}
+
+// SECT POPULAR POSTS //
+.popular-posts {
+    width: 400px;
+}
+
+.popular-posts h3 {
+    color: red;
+    padding: 1rem 0;
+}
+
+#newsletter {
+    @include flex-center;
+    flex-direction: column;
+    height: 280px;
+    justify-content: space-around;
+    border: solid 6px rgba(244, 246, 246, 1);
+    padding: 2rem;
+}
+
+#newsletter h4 {
+    font-family: 'roboto-bold';
+}
+
+#newsletter a {
+    padding: 0.9em 2.2em;
+    background: #f65b72;
+    background: -webkit-linear-gradient(90deg, #f65b72 0%, #f48f6f 100%);
+    background: linear-gradient(90deg, #f65b72 0%, #f48f6f 100%);
+    border-radius: 7px;
+    color: white;
+    font-family: 'roboto-bold';
+}
+
+.popular-posts a {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.popular-posts article {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+// SECT LATEST VIDS //
+
+
+
+
+// SECT MAIN FOOTER //
+
+
